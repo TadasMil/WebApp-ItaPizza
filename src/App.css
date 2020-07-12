@@ -3,22 +3,67 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  
 }
 
 /* NAVBAR */
 
-.nav{
-
+.nav-bar{
+  position: fixed;
+  width: 100%;
+  z-index: 3;
 }
 
-.nav-bar{
-  background: url(./images/home-background-image.png);
+.nav-bar-links{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff0a;
+}
+
+.nav-bar_logo img{
+  margin: 1rem 1rem;
+  width: 250px;
+  height: auto;
+}
+
+
+.nav-bar-link-list{
+  margin: 0 1rem;
+}
+
+.links{
+  color: white;
+  text-decoration: none;
+  margin: 0 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.links:hover{
+  color: red;
+  transition: all 0.3s linear;
+}
+
+
+/* HOME PAGE */
+
+.home-page{
+  background: url(./images/background-home-img.png);
   height: 100vh;
+  width: 100%;
   background-position: center;
-  background-repeat: none;
   background-size: cover;
-  animation: breath 30s linear infinite;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
 }
 
 @keyframes breath {
@@ -27,32 +72,66 @@
   100% { background-size: 100% auto; }
 }
 
-.nav-bar_logo img{
-  margin: 1rem 2rem;
-  width: 200px;
-  height: auto;
+.home-text{
+color: #ffffff;
+margin: 1rem 1rem;
+text-align: left;
+height: 30vh;
+width: 80%;
 }
 
-.nav-bar-elements{
-  position:fixed;
-  z-index: 5;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.home-text :nth-child(1){
+margin: 0 1rem;
+font-size: 4rem;
+letter-spacing: 5px;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.home-text :nth-child(2){
   font-size: 1.2rem;
+  margin: 1rem 1rem;
 
 }
 
-.nav-bar-links{
-  padding: 1rem;
-  margin: 1rem;
-}
-
-
-.links{
-  color: white;
+.home-text :nth-child(3){
+  font-size: 1rem;
+  display: inline-block;
+  margin: 1rem 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ffffff;
   text-decoration: none;
-  margin: 0 2rem;
+  color: white;
+  cursor: pointer;
+}
+.home-text :nth-child(3):hover{
+  color: red;
+  border-bottom: 2px solid red;
+  transition: all 0.3s linear;
+}
+
+.arrow{
+  position: absolute;
+  bottom: 5%;
+  color: white;
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+  cursor: pointer;
+}
+
+.arrow:hover{
+  color: red;
+  transition: all 0.3s linear;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }

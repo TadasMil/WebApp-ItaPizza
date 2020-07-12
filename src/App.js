@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Home from './components/pages/Home'
+import Home from './components/pages/home/Home'
 import About from './components/pages/About'
 import { Route, Switch } from 'react-router-dom';
-import NavBar from './components/NavBar'
+import NavBar from './components/navbar/NavBar'
 
 function App() {
   return (
