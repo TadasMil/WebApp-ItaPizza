@@ -9,8 +9,10 @@ export default function HomeMain() {
                 <div className='home-text'>
                     <p>Tobula pica</p>
                     <p>Panerk į tikros Itališkos picos skonį!</p>
-                    <Link to='/'>Sužinoti daugiau</Link>
+                        <Link to='/'>Sužinoti daugiau</Link>
                 </div>
+
+               
                 <Link to='/' className='arrow'><FaChevronDown/></Link>
             </div>
         </div>
