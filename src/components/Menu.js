@@ -9,7 +9,7 @@ export default class Menu extends Component {
     render() {
         
         return (
-            <div>
+            <div className='menu-items'>
                 {this.state.menu.map(item => {
                    return <MenuItem key={item.id} itemInfo={item}/>
                 })}             

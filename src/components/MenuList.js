@@ -10,19 +10,25 @@ import {GiMeal} from 'react-icons/gi'
 export const MenuList = [
     {
         id: 1,
-        name: 'Burgers',
+        name: 'Mėsainiai',
         img: burgerImg,
         icon: <FaHamburger />
     },
     {
         id: 2,
-        name: 'Pizzas',
+        name: 'Picos',
         img: pizzaImg,
         icon: <FaPizzaSlice />
     },
     {
         id: 3,
-        name: 'Kebabs',
+        name: 'Lavašai',
+        img: kebabImg,
+        icon: <GiMeal />
+    },
+    {
+        id: 4,
+        name: 'Blynai',
         img: kebabImg,
         icon: <GiMeal />
     }
