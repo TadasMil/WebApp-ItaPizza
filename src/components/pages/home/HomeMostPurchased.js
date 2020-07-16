@@ -1,13 +1,12 @@
 import React from 'react'
 import PizzasList from '../../pizzas/PizzasList'
+import Title from '../../Title'
 
 export default function HomeMostPurchased() {
 
     return (
         <div className='most-purchased'>
-            <div className='title'>
-                <span className='title-span'><h2>Populiariausios</h2></span>
-            </div>
+           <Title title='Populiariausios'/>
             <PizzasList mostPurchased={true}/>
         </div>
     )

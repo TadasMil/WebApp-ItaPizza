@@ -407,18 +407,15 @@ font-family: 'Poppins', sans-serif;
 
 .individual-pizza{
   flex: 20%;
-  border: 1px solid black;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   margin: 1rem;
 }
 
-@media (max-width: 1300px){
-  .individual-pizza{
+@media (max-width: 1450px) {
+  .individual-pizza {
     flex: 40%;
   }
 }
-
-
-
 
 .individual-pizza img{
   width: 250px;
@@ -432,6 +429,17 @@ font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
 }
 
+.individual-more-button{
+  font-size: 1.3rem;
+  vertical-align: middle;
+}
+
+.individual-more h4{
+  margin: 0;
+  display: inline-block;
+  margin: 0 0.5rem 0.5rem 0.5rem;
+}
+
 .individual-pizza p{
   line-height: 25px;
   margin: 0 1rem;
@@ -440,4 +448,20 @@ font-family: 'Poppins', sans-serif;
 
 .individual-price{
   margin: 1rem;
+}
+
+.individual-description{
+  transition: max-height 0.15s ease-out;
+}
+
+
+/* HOME PROS TWO */
+
+.pros-two{
+  background: url('./images/home-back2.png');
+  height: 50vh;
+  margin-top: 4rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
