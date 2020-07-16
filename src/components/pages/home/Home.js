@@ -2,6 +2,7 @@ import React from 'react'
 import HomeMain from './HomeMain'
 import HomeMenu from './HomeMenu'
 import HomeFirstPros from './HomeFirstPros'
+import HomeMostPurchased from './HomeMostPurchased'
 
 export default function Home() {
     return (
@@ -9,8 +10,7 @@ export default function Home() {
             <HomeMain/>
             <HomeMenu/>   
             <HomeFirstPros/>
-
-            <h2>Tadas</h2>
+            <HomeMostPurchased></HomeMostPurchased>
         </React.Fragment>
     )
 }
