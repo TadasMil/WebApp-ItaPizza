@@ -9,7 +9,7 @@ export default function NavBarLinks() {
                 <Link to='/' className='links'>Pradinis</Link>
                 <Link to='/about' className='links'>Produktai</Link>           
                 </div>
-                <NavBarLogo/>
+                <NavBarLogo styling={"nav-bar_logo"}/>
                 <div className='nav-bar-link-list'>
                 <Link to='/about' className='links'>Apie mus</Link>
                 <Link to='/about' className='links'>Kontaktai</Link>

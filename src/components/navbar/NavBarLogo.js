@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function NavBarLogo() {
+export default function NavBarLogo({styling}) {
     return (
-            <div className="nav-bar_logo">
+            <div className={styling}>
                 <img src={ require('../../images/logo-img.png') } alt='logo-img' />
             </div>
     )

@@ -32,7 +32,7 @@ export default class Pizza extends Component {
         const {img, name, description, price} = this.props.pizzaInfo;
         return (
             <div className='individual-pizza'>
-            <img src={img}></img>
+            <img src={img} alt='pizza'></img>
             <h3>{name}</h3>
                 <div className='individual-more'>
                     <span className='individual-more-button' onClick={this.handleShowInfo}><FaCaretSquareDown/></span>

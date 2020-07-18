@@ -4,6 +4,8 @@ import HomeMenu from './HomeMenu'
 import HomeFirstPros from './HomeFirstPros'
 import HomeMostPurchased from './HomeMostPurchased'
 import HomeSecondPros from './HomeSecondPros'
+import UsersReviewList from './users-reviews/UsersReviewList'
+import Footer from '../../footer/Footer'
 
 export default function Home() {
     return (
@@ -13,7 +15,8 @@ export default function Home() {
             <HomeFirstPros/>
             <HomeMostPurchased></HomeMostPurchased>
             <HomeSecondPros/>
-            <h1>Tadas</h1>
+            <UsersReviewList/>
+            <Footer/>
         </React.Fragment>
     )
 }
