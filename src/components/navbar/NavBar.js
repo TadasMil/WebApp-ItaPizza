@@ -3,21 +3,35 @@ import NavBarLinks from './NavBarLinks'
 
 export default class NavBar extends Component {
     state = {
-        navBackground: "nav-bar"
-      };
+        backgroundColor: 'nav-bar'
 
-      componentDidMount() {
-        document.addEventListener("scroll", () => {
-          const backgroundcolor = window.scrollY < 1000 ? "nav-bar" : "nav-bar-scrolled";
-    
-          this.setState({ navBackground: backgroundcolor });
-        });
+    };
+ 
+    componentDidMount() {
+      window.addEventListener('scroll', this.listenScrollEvent)
+    }
+
+    listenScrollEvent = event => {
+      if (window.scrollY < 450) {
+       this.setState({
+         backgroundColor: 'nav-bar'
+       })
+       console.log('scrolled')
+      } else if (window.scrollY > 500) {
+        this.setState({
+          backgroundColor: 'nav-bar-scrolled'
+        })
       }
+    };
 
+    componentWillUnmount = () => {
+      window.removeEventListener('scroll', this.listenScrollEvent);
+    }
+  
     render() {
         return (
-            <nav className={this.state.navBackground}>
-                <NavBarLinks/>         
+            <nav className={this.state.backgroundColor}>
+                <NavBarLinks />       
             </nav>
         )
     }
