@@ -1,52 +1,80 @@
 import React, { Component } from 'react'
 import UserReview from './UserReview'
-import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick'
+import Title from '../../../Title'
 
 export default class UsersReviewList extends Component {
     state = {
         users: [
             {
                 id: 1,
-                name: "Monika",
-                review: "Skanūs patiekalai, malonus aptarnavimas",
-                img: "https://randomuser.me/api/portraits/thumb/men/75.jpg",
+                name: "-Monika Dobraitytė",
+                review: "Skanūs patiekalai, malonus aptarnavimas. Maisto kokybė labai gera. Esu didelė picų megėja, visada prekinsiuos tik pas jus",
+                img: "https://randomuser.me/api/portraits/thumb/women/75.jpg",
             },
             {
                 id: 2,
-                name: "Donatas",
-                review: "Patiko maisto kokybė, tikri Itališki patiakalai",
-                img: "https://randomuser.me/api/portraits/thumb/men/99.jpg",
+                name: "-Donatas Kačinskas",
+                review: "Patiko maisto kokybė, tikri Itališki patiakalai. Pasijaučiau kaip Italijoje, teko lankytis, maisto skonis panašus.",
+                img: "https://randomuser.me/api/portraits/thumb/men/40.jpg",
             },
             {
                 id: 3,
-                name: "Kęstas",
-                review: "Įvairus patiekalų pasirinkimas, labai patiko",
-                img: "https://randomuser.me/api/portraits/med/men/45.jpg",
+                name: "-Dominyka Linksmoji",
+                review: "Įvairus patiekalų pasirinkimas, labai patiko. Tikrai apsilankysiu dar ne vieną sykį.",
+                img: "https://randomuser.me/api/portraits/med/women/15.jpg",
+            }
+            ,
+            {
+                id: 4,
+                name: "-Jonas Storasis",
+                review: "Greitas aptarnavimas. Skubėjau į darbą, maniau, kad vėluosiu, bet ne. Aptarnavo per 20 minučių. Super!",
+                img: "https://randomuser.me/api/portraits/med/men/47.jpg",
+            }
+            ,
+            {
+                id: 5,
+                name: "-Karolina Brimavičiūtė",
+                review: "Taip skaniai nebuvau valgiusi nuo Kinijos laikų. Užskaitau.",
+                img: "https://randomuser.me/api/portraits/med/women/35.jpg",
             }
         ],
         
     }
 
+  
+
     render() {
-    var settings = {
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 2,
-        initialSlide: 0,
-    } 
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            className:'slider',
+            arrows: false,
+            pauseOnHover: false
+          };
         return (
             <>
-               <Slider {...settings}>
-                        {
-                            this.state.users.map(item=>{
-                                return (
-                                    <UserReview key={item.id} userReview={item}/>
-                                )
-                            })
-                        }    
+            <div className='user-review-list'>
+               <Title title='Atsiliepimai'/>
+                <div className='slider-div'>
+                <Slider {...settings}>
+                    {
+                    this.state.users.map(user => {
+                        return (
+                        <UserReview key={user.id} userReview={user}/>
+                        )
+                    })
+                    }
                 </Slider>
+                </div>
+            </div>
             </>
         )
     }
