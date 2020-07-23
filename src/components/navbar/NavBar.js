@@ -1,14 +1,33 @@
 import React, { Component } from 'react'
 import NavBarLinks from './NavBarLinks'
+import NavBarMobile from './NavBarMobile'
 
 export default class NavBar extends Component {
     state = {
-        backgroundColor: 'nav-bar'
-
+        backgroundColor: 'nav-bar',
+        layoutMode: this.getLayoutMode()
     };
  
     componentDidMount() {
       window.addEventListener('scroll', this.listenScrollEvent)
+      window.addEventListener("resize", this.onResize);
+    }
+
+    componentWillUnmount = () => {
+      window.removeEventListener('scroll', this.listenScrollEvent);
+      window.removeEventListener('resize', this.onResize);
+    }
+
+    onResize = ()  => {
+      this.setState({
+          layoutMode: this.getLayoutMode(),
+      });
+    }
+
+    getLayoutMode() {
+      return window.innerWidth > 800 ?
+          'desktop'
+          : 'mobile';
     }
 
     listenScrollEvent = event => {
@@ -23,15 +42,13 @@ export default class NavBar extends Component {
         })
       }
     };
-
-    componentWillUnmount = () => {
-      window.removeEventListener('scroll', this.listenScrollEvent);
-    }
   
     render() {
         return (
             <nav className={this.state.backgroundColor}>
-                <NavBarLinks />       
+               {
+                 this.state.layoutMode === 'desktop' ? <NavBarLinks /> : <NavBarMobile />
+               }       
             </nav>
         )
     }
