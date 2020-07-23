@@ -57,7 +57,18 @@ export default class UsersReviewList extends Component {
             slidesToScroll: 1,
             className:'slider',
             arrows: false,
-            pauseOnHover: false
+            pauseOnHover: false,
+            responsive: [
+                {
+                  breakpoint: 730,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                  }
+                }
+            ]
           };
         return (
             <>

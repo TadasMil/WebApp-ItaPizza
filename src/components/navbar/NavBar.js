@@ -5,7 +5,7 @@ import NavBarMobile from './NavBarMobile'
 export default class NavBar extends Component {
     state = {
         backgroundColor: 'nav-bar',
-        layoutMode: this.getLayoutMode()
+        layoutMode: this.getLayoutMode(),
     };
  
     componentDidMount() {
@@ -42,6 +42,7 @@ export default class NavBar extends Component {
         })
       }
     };
+
   
     render() {
         return (

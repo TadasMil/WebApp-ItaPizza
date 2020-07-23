@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import {FaCaretSquareDown} from 'react-icons/fa'
+import Button from '../Button'
+import Zoom from 'react-reveal/Zoom';
 
 export default class Pizza extends Component {
     state = {
@@ -19,9 +21,12 @@ export default class Pizza extends Component {
                     <div className='individual-description'>
                         <p>{description}</p>
                         <div className='individual-price'>
-                            <p>45cm</p>
-                            <p>{price}</p>
+                           <span className='individual-price-ele'>
+                                <p>45cm</p>
+                                <p>{price}</p>
+                           </span>
                         </div>
+                        <Button className='button-products' buttonText='Užsisakyti' link='/'></Button>
                      </div>
                 )
             } else {
@@ -29,9 +34,15 @@ export default class Pizza extends Component {
             }
         }
         
-        const {img, name, description, price} = this.props.pizzaInfo;
+        const {img, name, description, popular, price} = this.props.pizzaInfo;
         return (
+            <Zoom left>
             <div className='individual-pizza'>
+                {popular ? 
+                <div className='individual-pizza-popular'>
+                    <p>Perkamiausia</p>
+                </div>
+                : null}
             <img src={img} alt='pizza'></img>
             <h3>{name}</h3>
                 <div className='individual-more'>
@@ -40,6 +51,7 @@ export default class Pizza extends Component {
                 </div>
             {checkInfo(this.state.showInfo)}
         </div>
+        </Zoom>
         )
     }
 }
