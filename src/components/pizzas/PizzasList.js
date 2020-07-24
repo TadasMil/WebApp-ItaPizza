@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {PizzasData} from '../PizzaData'
+import SelectedFood from './SelectedFood'
 import Pizza from './Pizza'
 
 export default class PizzasList extends Component {
@@ -22,9 +23,7 @@ export default class PizzasList extends Component {
             )
         } else {
             return (
-                <div>
-                    <h1>Tadas</h1>
-                </div>
+                <SelectedFood pizzaData={this.state.pizzaData} selectedProduct={this.props.selectedProduct}/>
             )
         }
     }

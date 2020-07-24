@@ -10,9 +10,9 @@ export default function FooterSocial() {
        <>
         <div className='social'>
             <FaInstagram/>
-            <AiOutlineFacebook/>
+            <span><AiOutlineFacebook/></span>
             <FiTwitter/>
-            <FaSpotify/>
+            <span><FaSpotify/></span>
             <AiFillLinkedin/>
         </div>
        </>

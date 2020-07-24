@@ -35,7 +35,6 @@ export default class NavBar extends Component {
        this.setState({
          backgroundColor: 'nav-bar'
        })
-       console.log('scrolled')
       } else if (window.scrollY > 500) {
         this.setState({
           backgroundColor: 'nav-bar-scrolled'
@@ -45,13 +44,15 @@ export default class NavBar extends Component {
 
   
     render() {
+      
         return (
-            <nav className={this.state.backgroundColor}>
-               {
-                 this.state.layoutMode === 'desktop' ? <NavBarLinks /> : <NavBarMobile />
-               }       
-            </nav>
-        )
+          <nav className={this.state.backgroundColor}>
+             {
+               this.state.layoutMode === 'desktop' ? <NavBarLinks /> : <NavBarMobile />
+             }       
+          </nav>
+      )
+       
     }
 }
 

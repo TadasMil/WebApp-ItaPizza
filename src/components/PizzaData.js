@@ -19,6 +19,7 @@ export const PizzasData = [
         id: 1,
         popular: false,
         price: 9.99,
+        type: 'pizza',
         name: 'Aitriųjų paprikų',
         description: 'Kvietinių miltų pagrindas, pomidorų padažas, „Mozzarella“, pievagrybiai, saliamis, aitriosios paprikos, augalinis aliejus su česnaku',
         img: aitriuju
@@ -27,6 +28,7 @@ export const PizzasData = [
         id: 2,
         popular: false,
         price: 9.99,
+        type: 'pizza',
         name: 'Egzotiška',
         description: 'Kvietinių miltų pagrindas, pomidorų padažas, „Mozzarella“, kiaulienos kumpis, konservuoti ananasai, augalinis aliejus su česnaku',
         img: egzotiska
@@ -36,6 +38,7 @@ export const PizzasData = [
         id: 3,
         popular: false,
         price: 9.99,
+        type: 'pizza',
         name: 'Gurmanų',
         description: 'Kvietinių miltų pagrindas, pomidorų padažas, „Mozzarella“, saliamis, saulėje džiovinti pomidorai, artišokai, svogūnai, garstyčių padažas, augalinis aliejus su česnaku',
         img: gurmanu
@@ -45,6 +48,7 @@ export const PizzasData = [
         id: 4,
         popular: true,
         price: 9.99,
+        type: 'pizza',
         name: 'Gardžioji',
         description: 'Kvietinių miltų pagrindas, pomidorų padažas, „Mozzarella“, karštai rūkyta kiaulienos šoninė, virtas jautienos kumpis, svogūnai, augalinis aliejus su česnaku',
         img: gardzioji
@@ -54,6 +58,7 @@ export const PizzasData = [
         id: 5,
         popular: false,
         price: 9.99,
+        type: 'pizza',
         name: 'Havajų',
         description: 'Kvietinių miltų pagrindas, pomidorų padažas, „Mozzarella“, konservuoti ananasai, vištiena, švelnus saldžiarūgštis padažas, augalinis aliejus su česnaku',
         img: havaju
@@ -63,6 +68,7 @@ export const PizzasData = [
         id: 6,
         popular: true,
         price: 9.99,
+        type: 'pizza',
         name: 'Mafijos',
         description: 'Kvietinių miltų pagrindas, pomidorų padažas,“Mozzarella“, saliamis, vištiena, alyvuogės, Berno padažas, Chalapos paprikos, padažas „Santa Fe“, augalinis aliejus su česnaku',
         img: mafijos
@@ -72,6 +78,7 @@ export const PizzasData = [
         id: 7,
         popular: false,
         price: 9.99,
+        type: 'pizza',
         name: 'Nepolio',
         description: 'Kvietinių miltų pagrindas, pomidorų padažas, „Mozzarella“, vytintas saliamis “Napoli”, augalinis aliejus su česnaku',
         img: nepolio
@@ -81,6 +88,7 @@ export const PizzasData = [
         id: 8,
         popular: true,
         price: 9.99,
+        type: 'pizza',
         name: 'Provincijos',
         description: 'Kvietinių miltų pagrindas, pomidorų padažas, „Mozzarella“, karštai rūkyta kiaulienos šoninė, svogūnai, marinuoti agurkėliai, augalinis aliejus su česnaku',
         img: provincijos
@@ -90,6 +98,7 @@ export const PizzasData = [
         id: 9,
         popular: false,
         price: 9.99,
+        type: 'pizza',
         name: 'Sicilijos',
         description: 'Kvietinių miltų pagrindas, pomidorų padažas, „Mozzarella“, pievagrybiai, malta kiauliena, švž. paprikos, krapų padažas, augalinis aliejus su česnaku',
         img: sicilijos
@@ -99,6 +108,7 @@ export const PizzasData = [
         id: 10,
         popular: false,
         price: 9.99,
+        type: 'pizza',
         name: 'Sočioji',
         description: 'Kvietinių miltų pagrindas, pomidorų padažas, „Mozzarella“, malta kiauliena, karštai rūkyta kiaulienos šoninė, svogūnai, augalinis aliejus su česnaku',
         img: socioji
@@ -108,6 +118,7 @@ export const PizzasData = [
         id: 11,
         popular: false,
         price: 9.99,
+        type: 'pizza',
         name: 'Su grybais',
         description: 'Kvietinių miltų pagrindas, pomidorų padažas, „Mozzarella“, kiaulienos kumpis, pievagrybiai, marinuoti agurkėliai, augalinis aliejus su česnaku',
         img: grybais
@@ -117,6 +128,7 @@ export const PizzasData = [
         id: 12,
         popular: true,
         price: 9.99,
+        type: 'pizza',
         name: 'Su vištiena',
         description: 'Kvietinių miltų pagrindas, pomidorų padažas, „Mozzarella“, pievagrybiai, vištiena, marinuoti agurkėliai, augalinis aliejus su česnaku',
         img: vistiena

@@ -1,13 +1,13 @@
 import React from 'react'
-import Bounce from 'react-reveal/Bounce';
 
-export default function Title({title}) {
+export default function Title({name}) {
     return (
-        
-        <div className='title'>
-            <Bounce top>
-            <span className='title-span'><h2>{title}</h2></span>
-            </Bounce>
-        </div>
+        <>
+            
+                <div className='pages-title'>
+                    <h3>{name}</h3>
+                </div>
+            
+        </>
     )
 }

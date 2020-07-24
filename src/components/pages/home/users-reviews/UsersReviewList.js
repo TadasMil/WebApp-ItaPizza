@@ -3,7 +3,7 @@ import UserReview from './UserReview'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick'
-import Title from '../../../Title'
+import SectionName from '../../../SectionName'
 
 export default class UsersReviewList extends Component {
     state = {
@@ -52,7 +52,7 @@ export default class UsersReviewList extends Component {
             infinite: true,
             speed: 500,
             autoplay: true,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 7000,
             slidesToShow: 2,
             slidesToScroll: 1,
             className:'slider',
@@ -73,7 +73,7 @@ export default class UsersReviewList extends Component {
         return (
             <>
             <div className='user-review-list'>
-               <Title title='Atsiliepimai'/>
+               <SectionName title='Atsiliepimai'/>
                 <div className='slider-div'>
                 <Slider {...settings}>
                     {
