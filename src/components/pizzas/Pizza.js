@@ -59,7 +59,7 @@ export default class Pizza extends Component {
         
         const {img, size, name, newProduct, type, description, popular, price} = this.props.pizzaInfo;
         return (
-            <Zoom left>
+          <Zoom>
             <div className='individual-pizza'>
                {this.checkForPopular(popular, newProduct)}
             <img src={img} alt='pizza'></img>
@@ -69,8 +69,8 @@ export default class Pizza extends Component {
                     <h4>Aprašymas</h4>
                 </div>
             {checkInfo(this.state.showInfo)}
-        </div>
-        </Zoom>
+         </div>
+         </Zoom>
         )
     }
 }

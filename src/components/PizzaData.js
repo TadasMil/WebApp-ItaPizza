@@ -148,7 +148,7 @@ export const PizzasData = [
     , 
     {
         id: 12,
-        popular: true,
+        popular: false,
         newProduct: false,
         size: 42,
         price: 9.99,

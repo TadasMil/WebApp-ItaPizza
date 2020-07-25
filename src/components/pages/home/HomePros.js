@@ -6,7 +6,7 @@ export default function HomePros(props) {
     return (
         <div>
             <div className={props.imageStyling}>
-                <Fade right>
+               
                 <div className={props.textStyling}>
                     <div className={props.textBoxStyling}>
                     <h3>{props.text1}</h3>
@@ -17,7 +17,7 @@ export default function HomePros(props) {
                         </div>                   
                     </div>
                 </div>
-                </Fade>
+                
             </div>
         </div>
     )

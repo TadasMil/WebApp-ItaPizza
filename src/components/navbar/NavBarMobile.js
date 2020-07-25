@@ -21,9 +21,9 @@ export default class NavBarMobile extends Component {
                     <div className='nav-mobile-toggle'>
                         {this.state.toggleOn ? <MdClose onClick={this.handleOnToggleClick}/> : <TiThMenu onClick={this.handleOnToggleClick}/> }
                     </div>
-            </div>
+                </div>
 
-            {this.state.toggleOn ? <ToggleMenu/> : null}
+            {this.state.toggleOn ? <ToggleMenu handleOnToggleClick={this.handleOnToggleClick}/> : null}
             </div>
         )
     }

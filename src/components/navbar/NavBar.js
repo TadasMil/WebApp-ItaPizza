@@ -31,26 +31,29 @@ export default class NavBar extends Component {
     }
 
     listenScrollEvent = event => {
-      if (window.scrollY < 450) {
+      if (window.scrollY < 300) {
        this.setState({
          backgroundColor: 'nav-bar'
        })
-      } else if (window.scrollY > 500) {
+      } else if (window.scrollY > 350) {
         this.setState({
           backgroundColor: 'nav-bar-scrolled'
         })
       }
     };
 
-  
+   
     render() {
-      
         return (
-          <nav className={this.state.backgroundColor}>
-             {
-               this.state.layoutMode === 'desktop' ? <NavBarLinks /> : <NavBarMobile />
-             }       
-          </nav>
+         
+             
+              <>
+                  {
+                this.state.layoutMode === 'desktop' ? <NavBarLinks /> : <NavBarMobile />
+                }
+              </>
+
+  
       )
        
     }
