@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import NavBar from '../../navbar/NavBar'
 import ProductsTitle from './ProductsTitle'
 import ProductsList from './ProductsList'
+import ProductLinksList from './ProductLinksList'
+import Footer from '../../footer/Footer'
 
 export default class Products extends Component {
     constructor(props){
@@ -16,15 +18,18 @@ export default class Products extends Component {
 
         this.setState({
             product: newProduct
-        })
+        },() => {console.log(this.state.product)})
     
     }
 
     render() {
         return (
             <>
-                <ProductsTitle handleOnProductChange={this.handleOnProductChange}/>
+                <ProductsTitle/>
+                    <ProductLinksList handleOnProductChange={this.handleOnProductChange}/>
                     <ProductsList selectedProduct={this.state.product}/>
+
+                <Footer />
             </>
         )
     }

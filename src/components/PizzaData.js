@@ -18,6 +18,7 @@ export const PizzasData = [
     {
         id: 1,
         popular: false,
+        new: true,
         price: 9.99,
         type: 'pizza',
         name: 'Aitriųjų paprikų',
@@ -27,6 +28,7 @@ export const PizzasData = [
     {
         id: 2,
         popular: false,
+        new: false,
         price: 9.99,
         type: 'pizza',
         name: 'Egzotiška',
@@ -37,6 +39,7 @@ export const PizzasData = [
     {
         id: 3,
         popular: false,
+        new: false,
         price: 9.99,
         type: 'pizza',
         name: 'Gurmanų',
@@ -47,6 +50,7 @@ export const PizzasData = [
     {
         id: 4,
         popular: true,
+        new: false,
         price: 9.99,
         type: 'pizza',
         name: 'Gardžioji',
@@ -57,6 +61,7 @@ export const PizzasData = [
     {
         id: 5,
         popular: false,
+        new: true,
         price: 9.99,
         type: 'pizza',
         name: 'Havajų',
@@ -67,6 +72,7 @@ export const PizzasData = [
     {
         id: 6,
         popular: true,
+        new: false,
         price: 9.99,
         type: 'pizza',
         name: 'Mafijos',
@@ -77,6 +83,7 @@ export const PizzasData = [
     {
         id: 7,
         popular: false,
+        new: false,
         price: 9.99,
         type: 'pizza',
         name: 'Nepolio',
@@ -87,6 +94,7 @@ export const PizzasData = [
     {
         id: 8,
         popular: true,
+        new: false,
         price: 9.99,
         type: 'pizza',
         name: 'Provincijos',
@@ -97,6 +105,7 @@ export const PizzasData = [
     {
         id: 9,
         popular: false,
+        new: false,
         price: 9.99,
         type: 'pizza',
         name: 'Sicilijos',
@@ -107,6 +116,7 @@ export const PizzasData = [
     {
         id: 10,
         popular: false,
+        new: false,
         price: 9.99,
         type: 'pizza',
         name: 'Sočioji',
@@ -117,6 +127,7 @@ export const PizzasData = [
     {
         id: 11,
         popular: false,
+        new: false,
         price: 9.99,
         type: 'pizza',
         name: 'Su grybais',
@@ -127,9 +138,32 @@ export const PizzasData = [
     {
         id: 12,
         popular: true,
+        new: false,
         price: 9.99,
         type: 'pizza',
         name: 'Su vištiena',
+        description: 'Kvietinių miltų pagrindas, pomidorų padažas, „Mozzarella“, pievagrybiai, vištiena, marinuoti agurkėliai, augalinis aliejus su česnaku',
+        img: vistiena
+    }
+    , 
+    {
+        id: 13,
+        popular: false,
+        new: false,
+        price: 9.99,
+        type: 'burger',
+        name: 'Burgeris',
+        description: 'Kvietinių miltų pagrindas, pomidorų padažas, „Mozzarella“, pievagrybiai, vištiena, marinuoti agurkėliai, augalinis aliejus su česnaku',
+        img: vistiena
+    }
+    , 
+    {
+        id: 14,
+        popular: false,
+        new: false,
+        price: 9.99,
+        type: 'pizza',
+        name: 'Burgeris',
         description: 'Kvietinių miltų pagrindas, pomidorų padažas, „Mozzarella“, pievagrybiai, vištiena, marinuoti agurkėliai, augalinis aliejus su česnaku',
         img: vistiena
     }

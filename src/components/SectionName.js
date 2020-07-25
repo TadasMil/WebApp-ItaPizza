@@ -6,7 +6,7 @@ export default function Title({title}) {
         
         <div className='title'>
             <Bounce top>
-            <span className='title-span'><h2>{title}</h2></span>
+                <span className='title-span'><h2>{title}</h2></span>
             </Bounce>
         </div>
     )
