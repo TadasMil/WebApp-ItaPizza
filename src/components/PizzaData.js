@@ -18,7 +18,8 @@ export const PizzasData = [
     {
         id: 1,
         popular: false,
-        new: true,
+        newProduct: true,
+        size: 42,
         price: 9.99,
         type: 'pizza',
         name: 'Aitriųjų paprikų',
@@ -27,8 +28,9 @@ export const PizzasData = [
     }, 
     {
         id: 2,
-        popular: false,
-        new: false,
+        popular: true,
+        newProduct: false,
+        size: 42,
         price: 9.99,
         type: 'pizza',
         name: 'Egzotiška',
@@ -39,7 +41,8 @@ export const PizzasData = [
     {
         id: 3,
         popular: false,
-        new: false,
+        newProduct: false,
+        size: 42,
         price: 9.99,
         type: 'pizza',
         name: 'Gurmanų',
@@ -50,7 +53,8 @@ export const PizzasData = [
     {
         id: 4,
         popular: true,
-        new: false,
+        newProduct: false,
+        size: 42,
         price: 9.99,
         type: 'pizza',
         name: 'Gardžioji',
@@ -61,7 +65,8 @@ export const PizzasData = [
     {
         id: 5,
         popular: false,
-        new: true,
+        newProduct: true,
+        size: 42,
         price: 9.99,
         type: 'pizza',
         name: 'Havajų',
@@ -72,7 +77,8 @@ export const PizzasData = [
     {
         id: 6,
         popular: true,
-        new: false,
+        newProduct: false,
+        size: 42,
         price: 9.99,
         type: 'pizza',
         name: 'Mafijos',
@@ -83,7 +89,8 @@ export const PizzasData = [
     {
         id: 7,
         popular: false,
-        new: false,
+        newProduct: false,
+        size: 42,
         price: 9.99,
         type: 'pizza',
         name: 'Nepolio',
@@ -94,7 +101,8 @@ export const PizzasData = [
     {
         id: 8,
         popular: true,
-        new: false,
+        newProduct: false,
+        size: 42,
         price: 9.99,
         type: 'pizza',
         name: 'Provincijos',
@@ -105,7 +113,8 @@ export const PizzasData = [
     {
         id: 9,
         popular: false,
-        new: false,
+        newProduct: false,
+        size: 42,
         price: 9.99,
         type: 'pizza',
         name: 'Sicilijos',
@@ -116,7 +125,8 @@ export const PizzasData = [
     {
         id: 10,
         popular: false,
-        new: false,
+        newProduct: true,
+        size: 42,
         price: 9.99,
         type: 'pizza',
         name: 'Sočioji',
@@ -127,7 +137,8 @@ export const PizzasData = [
     {
         id: 11,
         popular: false,
-        new: false,
+        newProduct: false,
+        size: 42,
         price: 9.99,
         type: 'pizza',
         name: 'Su grybais',
@@ -138,7 +149,8 @@ export const PizzasData = [
     {
         id: 12,
         popular: true,
-        new: false,
+        newProduct: false,
+        size: 42,
         price: 9.99,
         type: 'pizza',
         name: 'Su vištiena',
@@ -149,23 +161,132 @@ export const PizzasData = [
     {
         id: 13,
         popular: false,
-        new: false,
-        price: 9.99,
+        newProduct: false,
+        size: 160,
+        price: 2.40,
         type: 'burger',
-        name: 'Burgeris',
-        description: 'Kvietinių miltų pagrindas, pomidorų padažas, „Mozzarella“, pievagrybiai, vištiena, marinuoti agurkėliai, augalinis aliejus su česnaku',
-        img: vistiena
+        name: 'Vištytė',
+        description: 'Sultinga vištienos krūtinėlė, padengta unikalaus skonio aštria ir prieskoninga tešla, traškios salotos ir majonezas. Visa tai patiekta tarp dviejų gardžių sezamo bandelių.',
+        img: 'https://d1z9yk8rgnwm74.cloudfront.net/QyL3Po3Vom92RG5BKMmSdEjH.png?dw=230'
     }
     , 
     {
         id: 14,
-        popular: false,
-        new: false,
-        price: 9.99,
-        type: 'pizza',
-        name: 'Burgeris',
-        description: 'Kvietinių miltų pagrindas, pomidorų padažas, „Mozzarella“, pievagrybiai, vištiena, marinuoti agurkėliai, augalinis aliejus su česnaku',
-        img: vistiena
+        popular: true,
+        newProduct: false,
+        size: 250,
+        price: 5.50,
+        type: 'burger',
+        name: 'Tornadas',
+        description: 'Pagardintas ne tik unikalaus skonio vištiena bei šonine, bet ir svogūnais. BBQ bei majonezo padažai, šviežios salotos, pomidoras ir čederio sūris tikrai nepaliks abejingų! Galima rinktis tarp klasikinio ir aštraus.',
+        img: "https://d1z9yk8rgnwm74.cloudfront.net/9pCKXv6Mc9YgDPMvHLVHPRFx.png?dw=230"
     }
-
+    , 
+    {
+        id: 15,
+        popular: false,
+        newProduct: false,
+        size: 160,
+        price: 2.50,
+        type: 'burger',
+        name: 'Gaidžiukas',
+        description: 'Sultinga vištienos krūtinėlė, padengta unikalaus skonio aštria ir prieskoninga tešla, traškios salotos ir majonezas. Visa tai patiekta tarp dviejų gardžių sezamo bandelių.',
+        img: "https://d1z9yk8rgnwm74.cloudfront.net/9Mqc3FLWKns7QNrnPXnQ9GyL.png?dw=230"
+    }
+    , 
+    {
+        id: 16,
+        popular: false,
+        newProduct: true,
+        size: 300,
+        price: 6.00,
+        type: 'burger',
+        name: 'Vištiena MAX',
+        description: 'Bandelė, traški vištienos lazdelė, marinuoti agurkėliai, svogūnai, pomidorų padažas, majonezas.',
+        img: "https://d1z9yk8rgnwm74.cloudfront.net/Vj7of8z3jJiqZNqmsCEjA9gv.png?dw=230"
+    }
+    , 
+    {
+        id: 17,
+        popular: false,
+        newProduct: false,
+        size: 250,
+        price: 5.80,
+        type: 'burger',
+        name: 'Aštrusis Meksikietiškas',
+        description: 'Pagardintas ne tik unikalaus skonio vištiena bei šonine, bet ir svogūnais. Na, o BBQ bei majonezo padažai, šviežios salotos, pomidoras ir čederio sūris tikrai nepaliks abejingų! Galima rinktis tarp klasikinio ir aštraus.',
+        img: "https://d1z9yk8rgnwm74.cloudfront.net/wsmFJTHDsR3xsCvPZzLV8da7.png?dw=230"
+    }
+    , 
+    {
+        id: 18,
+        popular: false,
+        newProduct: false,
+        size: 200,
+        price: 4.40,
+        type: 'burger',
+        name: 'Paprastasis su sūriu',
+        description: 'Bandelė, čederio sūris, traški vištienos lazdelė, marinuoti agurkėliai, svogūnai, pomidorų padažas, garstyčios.',
+        img: "https://d1z9yk8rgnwm74.cloudfront.net/ZsBZBtHHdMgz5xY8tyvXu7W6.png?dw=230"
+    }
+    , 
+    {
+        id: 19,
+        popular: false,
+        newProduct: false,
+        size: 500,
+        price: 6.50,
+        type: 'suktinis',
+        name: 'Suktinis Kumpiukas',
+        description: 'Kvietinių miltų pagrindas, pomidorų padažas, „Mozzarella“, forminis kiaulienos kumpis, pievagrybiai, augalinis aliejus su česnaku',
+        img: "https://www.noriupicos.lt/wp-content/uploads/2019/04/80e835a1-63c5-491d-a16a-113e405c4b48-300x177.png"
+    }
+    , 
+    {
+        id: 20,
+        popular: false,
+        newProduct: false,
+        size: 500,
+        price: 6.50,
+        type: 'suktinis',
+        name: 'Suktinis HOT',
+        description: 'Kvietinių miltų pagrindas, pomidorų padažas, „Mozzarella“, malta kiauliena, švž. paprikos, Chalapos paprikos, augalinis aliejus su česnaku.',
+        img: "https://www.noriupicos.lt/wp-content/uploads/2019/04/foto-picos-www_1200px_0032_suktinukai_a-300x177.png"
+    }
+    , 
+    {
+        id: 21,
+        popular: false,
+        newProduct: false,
+        size: 500,
+        price: 6.50,
+        type: 'suktinis',
+        name: 'Vištienos suktinis',
+        description: 'Kvietinių miltų pagrindas, pomidorų padažas, „Mozzarella“, vištiena, pievagrybiai, konservuotos paprikos, augalinis aliejus su česnaku',
+        img: "https://www.noriupicos.lt/wp-content/uploads/2019/04/foto-picos-www_1200px_0032_suktinukai_v-300x177.png"
+    }
+    , 
+    {
+        id: 22,
+        popular: true,
+        newProduct: false,
+        size: 300,
+        price: 3.20,
+        type: 'kebab',
+        name: 'Kebabas su vištiena',
+        description: 'Traškus kebabas su vištiena, pagardintas padažais. Šviežios daržovės, tarp jų ridikėliai, pomidorai, agurkai, salotų lapai.',
+        img: "https://d1z9yk8rgnwm74.cloudfront.net/BvNZa9xe1NZ66ujjS9Apxcso.png?dw=230"
+    }
+    , 
+    {
+        id: 23,
+        popular: false,
+        newProduct: false,
+        size: 300,
+        price: 3.20,
+        type: 'kebab',
+        name: 'Kebabas su kiauliena',
+        description: 'Traškus kebabas su kiauliena, pagardintas padažais. Šviežios daržovės, tarp jų ridikėliai, pomidorai, agurkai, salotų lapai.',
+        img: "https://d1z9yk8rgnwm74.cloudfront.net/BvNZa9xe1NZ66ujjS9Apxcso.png?dw=230"
+    }
 ]

@@ -28,7 +28,6 @@ export default class Products extends Component {
                 <ProductsTitle/>
                     <ProductLinksList handleOnProductChange={this.handleOnProductChange}/>
                     <ProductsList selectedProduct={this.state.product}/>
-
                 <Footer />
             </>
         )
