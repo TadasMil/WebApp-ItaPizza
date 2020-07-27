@@ -16,14 +16,14 @@ export default class NavBarMobile extends Component {
     render() {
         return (
             <div>
-                <div className='nav-mobile'>
+                <div className='nav-mobile' style={{backgroundColor: this.props.styling}}>
                     <NavBarLogo styling='nav-mobile-logo'/>
                     <div className='nav-mobile-toggle'>
                         {this.state.toggleOn ? <MdClose onClick={this.handleOnToggleClick}/> : <TiThMenu onClick={this.handleOnToggleClick}/> }
                     </div>
                 </div>
 
-            {this.state.toggleOn ? <ToggleMenu handleOnToggleClick={this.handleOnToggleClick}/> : null}
+            {this.state.toggleOn ? <ToggleMenu handleOnToggleClick={this.handleOnToggleClick} styling={this.props.styling}/> : null}
             </div>
         )
     }

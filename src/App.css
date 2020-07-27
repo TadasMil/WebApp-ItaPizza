@@ -42,6 +42,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  transition: background-color 0.5s ease-in;
   align-items: center;
 }
 
@@ -83,6 +84,7 @@
   align-items: center;
   padding: 1rem;
   vertical-align: middle; 
+  transition: background-color 0.5s ease-in;
 }
 
 .nav-mobile-logo img{
@@ -107,6 +109,8 @@
   width: 100%;
   height: 250px;
   transition: all 1s ease; 
+  position: fixed;
+  z-index: 2;
 }
 
 .toggle-menu-links{ 
@@ -504,7 +508,7 @@ font-family: 'Poppins', sans-serif;
   margin: 1rem 1rem 1rem 0;
 }
 
-.pros-text-styling p{
+.pros-text-styling  p{
   color: white;
   font-weight: bold;
   display: inline-block;
@@ -523,7 +527,14 @@ font-family: 'Poppins', sans-serif;
   margin: 1rem 0 0 0;
 }
 
-
+.button p{
+  border: none;
+  color: black;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+}
 
 .button:hover{
   transform: scale(1.1);
@@ -536,6 +547,27 @@ font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.button-black{
+  padding: 1.2rem 1.8rem;
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin: 1rem 0 0 0;
+  color: #ffffff;
+}
+
+.button-black p{
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 3px;
+}
+
+.button-black:hover{
+  transform: scale(1.1);
 }
 
 @media(max-width: 1000px){
@@ -637,7 +669,6 @@ font-family: 'Poppins', sans-serif;
 @media(max-width: 400px){
   .individual-pizza img{
     width: 200px;
-  
   }
 }
 
@@ -698,7 +729,7 @@ font-family: 'Poppins', sans-serif;
 }
 
 .button-products{
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   background-color: black;
   cursor: pointer;
   border: none;
@@ -707,10 +738,10 @@ font-family: 'Poppins', sans-serif;
   border-radius: 5px;
 }
 
-.button-products a{
+.button-products p{
   color: white;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
   letter-spacing: 3px;
 }
 
@@ -887,6 +918,7 @@ text-align: center;
   display: flex;
   justify-content: space-evenly;
   max-width: 1500px;
+  flex-wrap: wrap;
 }
 
 .product{
@@ -912,6 +944,20 @@ text-align: center;
   letter-spacing: 3px;
 }
 
+@media (max-width: 650px){
+  .product-page-links-list{
+    margin: 0 auto;
+  }
+  .product{
+    flex-basis: 50%;
+    margin-bottom: 1rem;
+  }
+
+  .product img{
+    width: 50px;
+    height: 50px;
+  }
+}
 
 
 /* PRODUCTS LIST */
@@ -919,6 +965,152 @@ text-align: center;
 .products-list{
   width: 80%;
   margin: auto;
+}
+
+@media(max-width: 400px){
+  .products-list{
+    width: 90%;
+  }
+}
+
+/* ORDER COMPONENT */
+
+.order-component{
+  height: 100vh;
+  background-color: #0000004f;
+  position: relative;
+}
+
+.order-details{
+  position: absolute;
+  width: 80%;
+  height: 80%;
+}
+
+/*ABOUT US PAGE */
+
+.about-presentation{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.about-presentation-texts{
+  flex-basis: 70%;
+  margin: 1rem;
+  line-height: 30px;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  animation: blinker 1s ease-in;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.about-presentation-texts img{
+  margin: 2rem auto;
+  width: 100%;
+  height: auto;
+}
+
+.about-presentation-buttons-list{
+  flex-basis: 30%;
+  margin: 0 1rem 0 0;
+}
+
+
+.about-presentation-buttons p{
+  margin: 1.5rem 1rem;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 1px solid rgb(168, 168, 168);
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.about-presentation-button-position{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*ABOUT WHY US LIST */
+
+.about-why-us{
+  background-color: #f5f5f5;
+  padding: 5rem 0;
+}
+
+.about-why-us-list{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  max-width: 1500px;
+
+}
+
+.about-why-us-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+}
+
+.about-why-us-circle{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.212);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  box-shadow: -1px 1px 5px 3px rgba(0,0,0,0.75);
+  animation: myanimation 10s ease-in infinite;
+}
+
+@keyframes myanimation{
+  0% {background-color: #000000;}
+  25% {background-color: #ffffff; color: #000000;}
+  75% {background-color: red; color: #ffffff;}
+  100% {background-color: #000000;}
+}
+
+.about-why-us-icon{
+  font-size: 3rem;
+}
+
+.about-why-us-text{
+  text-align: left;
+  width: 70%;
+  margin: auto;
+}
+
+
+.about-why-us-text h5{
+  text-transform: capitalize;
+  margin: 1rem;
+  font-size: 1.2rem;
+  animation: textchanging 5s ease-in infinite;
+}
+
+@keyframes textchanging {
+  0% { color: #000000}
+  50% {color: red;}
+  100% {color: #000000}
+}
+
+.about-why-us-text p{ 
+  font-size: 0.9rem;
+  margin: 1rem;
 }
 
 

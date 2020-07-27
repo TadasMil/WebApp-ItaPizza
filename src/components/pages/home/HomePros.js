@@ -13,7 +13,7 @@ export default function HomePros(props) {
                     <h5>{props.text2}</h5>
                     <p>{props.text3}</p>   
                         <div>
-                            <Button className='button' buttonText='mūsų produktai' link='/'></Button>     
+                            <Button className='button' buttonText='mūsų produktai' link='/products'></Button>     
                         </div>                   
                     </div>
                 </div>

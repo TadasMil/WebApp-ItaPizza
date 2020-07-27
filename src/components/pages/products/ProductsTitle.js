@@ -1,11 +1,11 @@
 import React from 'react'
 import TitleOfPages from '../../TitleOfPages'
 
-export default function ProductsTitle() {
+export default function ProductsTitle({name}) {
     return (
         <>
             <div className='other-page-title'>
-                <TitleOfPages name='Meniu'/>
+                <TitleOfPages name={name}/>
             </div>
         </>
     )

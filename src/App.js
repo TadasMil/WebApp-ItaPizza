@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Home from './components/pages/home/Home'
-import About from './components/pages/About'
+import About from './components/pages/about/About'
 import { Route, Switch } from 'react-router-dom';
 import NavBar from './components/navbar/NavBar'
 import Products from '././components/pages/products/Products'

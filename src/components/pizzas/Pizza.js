@@ -35,7 +35,6 @@ export default class Pizza extends Component {
         }
     }
 
-   
 
     render() {
         const checkInfo = (info) => {
@@ -49,7 +48,7 @@ export default class Pizza extends Component {
                                 <p>{price}€</p>
                            </span>
                         </div>
-                        <Button className='button-products' buttonText='Užsisakyti' link='/'></Button>
+                        <Button className='button-products' buttonText='Užsisakyti' link='/products'></Button>
                      </div>
                 )
             } else {
@@ -65,7 +64,7 @@ export default class Pizza extends Component {
             <img src={img} alt='pizza'></img>
             <h3>{name}</h3>
                 <div className='individual-more'>
-                    <span className='individual-more-button' onClick={this.handleShowInfo}><FaCaretSquareDown/></span>
+                    <span className='individual-more-button' onClick={() => this.handleShowInfo(this.state.showInfo)}><FaCaretSquareDown/></span>
                     <h4>Aprašymas</h4>
                 </div>
             {checkInfo(this.state.showInfo)}

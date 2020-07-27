@@ -3,10 +3,10 @@ import {Link} from 'react-router-dom'
 import NavBarLogo from './NavBarLogo'
 
 
-export default function NavBarLinks() {
+export default function NavBarLinks({styling}) {
    
     return (
-        <div className='nav-bar-links'>
+        <div className='nav-bar-links' style={{backgroundColor: styling}}>
                 <div className='nav-bar-link-list'>
                     <Link to='/' className='links'>Pradinis</Link>
                     <Link to='/products' className='links'>Meniu</Link>           

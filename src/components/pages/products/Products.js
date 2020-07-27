@@ -25,7 +25,7 @@ export default class Products extends Component {
     render() {
         return (
             <>
-                <ProductsTitle/>
+                <ProductsTitle name={'Meniu'}/>
                     <ProductLinksList handleOnProductChange={this.handleOnProductChange}/>
                     <ProductsList selectedProduct={this.state.product}/>
                 <Footer />
