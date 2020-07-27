@@ -5,10 +5,10 @@ import {FiTwitter} from 'react-icons/fi'
 import {FaSpotify} from 'react-icons/fa'
 import {AiFillLinkedin} from 'react-icons/ai'
 
-export default function FooterSocial() {
+export default function FooterSocial({styling}) {
     return (
        <>
-        <div className='social'>
+        <div className={styling}>
             <FaInstagram/>
             <span><AiOutlineFacebook/></span>
             <FiTwitter/>

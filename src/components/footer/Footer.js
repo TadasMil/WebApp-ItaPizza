@@ -9,7 +9,7 @@ export default class Footer extends Component {
             <>
                 <div className='footer'>
                    <Logo styling='footer-logo'/>
-                   <SocialMedia />
+                   <SocialMedia styling='social'/>
                 </div>
             </>
         )

@@ -3,6 +3,8 @@ import ProductsTitle from '../products/ProductsTitle'
 import AboutPresentation from './AboutPresentation'
 import AboutWhyUsList from './AboutWhyUsList'
 import AboutOurTeam from './AboutOurTeam'
+import Footer from '../../footer/Footer'
+import {AboutClients} from './AboutClients'
 
 export default class About extends Component {
     render() {
@@ -12,6 +14,8 @@ export default class About extends Component {
                 <AboutPresentation/>
                 <AboutWhyUsList/>
                 <AboutOurTeam/>
+                <AboutClients/>
+                <Footer/>
                 
             </>
         )
