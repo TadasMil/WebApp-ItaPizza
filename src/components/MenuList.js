@@ -28,7 +28,7 @@ export const MenuList = [
     },
     {
         id: 4,
-        name: 'Blynai',
+        name: 'Suktiniai',
         img: kebabImg,
         icon: <GiMeal />
     }

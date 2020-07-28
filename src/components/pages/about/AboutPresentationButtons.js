@@ -25,11 +25,11 @@ export const AboutPresentationButtons = ({activeSection, handleSectionState}) =>
         },
     ]
     
-    const checkIfActive = (activeSection, currentItem, currentItemName) => {
+    const checkIfActive = (activeSection, currentItem, currentItemName, key) => {
         if(activeSection === currentItem){
-            return <p className='about-presentation-buttons-active' onClick={() => handleSectionState(currentItem)}>{currentItemName}</p>
+            return <p key={key} className='about-presentation-buttons-active' onClick={() => handleSectionState(currentItem)}>{currentItemName}</p>
         } else {
-            return <p onClick={() => handleSectionState(currentItem)}>{currentItemName}</p>
+            return <p key={key} onClick={() => handleSectionState(currentItem)}>{currentItemName}</p>
         }
     }
     
@@ -39,7 +39,7 @@ export const AboutPresentationButtons = ({activeSection, handleSectionState}) =>
             <div className='about-presentation-buttons'>
                 {
                     sections.map(item=>{
-                        return  checkIfActive(activeSection, item.identifier, item.name)
+                        return  checkIfActive(activeSection, item.identifier, item.name, item.id)
                     })
                 }
             </div>

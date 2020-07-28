@@ -10,19 +10,19 @@ export default class AboutWhyUs extends Component {
             {
                 id: 1,
                 title: 'greitas aptarnavimas',
-                text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh',
+                text: 'Aptarnavimo trukmė iki valandos piko metu, ne piko metu užsakymai atliekami per pusvalandį!',
                 icon: <IoMdSpeedometer/>
             },
             {
                 id: 2,
                 title: 'didelis maisto pasirinkimas',
-                text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh',
+                text: 'Galimybė paragauti virš 30 patiekalų! Picos, Suktiniai, Kebabai bei mėsainiai.',
                 icon: <IoMdPizza/>
             },
             {
                 id: 3,
                 title: 'Švieži ingredientai',
-                text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh',
+                text: 'Skaniausi patiekalai tuomet, kai ingredientai švieži. O pas mus jų netrūksta!',
                 icon: <FaLeaf/>
             },
         ]
