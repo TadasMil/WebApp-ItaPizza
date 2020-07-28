@@ -8,7 +8,7 @@ export default function ToggleMenu({handleOnToggleClick, styling}) {
                     <Link to='/' className='links' onClick={handleOnToggleClick}>Pradinis</Link>
                     <Link to='/products' className='links' onClick={handleOnToggleClick}>Meniu</Link>           
                     <Link to='/about' className='links' onClick={handleOnToggleClick}>Apie mus</Link>
-                    <Link to='/about' className='links' onClick={handleOnToggleClick}>Kontaktai</Link>
+                    <Link to='/contacts' className='links' onClick={handleOnToggleClick}>Kontaktai</Link>
            </div>
         </div>
     )
