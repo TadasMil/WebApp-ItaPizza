@@ -65,7 +65,7 @@ export default class Pizza extends Component {
             <h3>{name}</h3>
                 <div className='individual-more'>
                     <span className='individual-more-button' onClick={() => this.handleShowInfo(this.state.showInfo)}><FaCaretSquareDown/></span>
-                    <h4>Aprašymas</h4>
+                    <h4 onClick={() => this.handleShowInfo(this.state.showInfo)}>Aprašymas</h4>
                 </div>
             {checkInfo(this.state.showInfo)}
          </div>

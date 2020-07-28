@@ -369,9 +369,12 @@ flex-wrap: wrap;
   text-align: center;
   margin: 0; 
 }
-
 .circle:hover{
-  background-color: white;
+  background-color: #ffffff;
+  transition: all 0.5s linear;
+}
+
+.circle:hover .menu-icon{
   color: black;
   transition: all 0.2s linear;
 }
@@ -645,6 +648,7 @@ font-family: 'Poppins', sans-serif;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   margin: 1rem;
   text-align: center;
+
 }
 
 
@@ -663,12 +667,28 @@ font-family: 'Poppins', sans-serif;
 .individual-pizza img{
   width: 250px;
   margin: 3rem 1rem 1rem 1rem;
-  height: auto;
+  height: 150px;
+}
+
+@media(max-width: 810px){
+  .most-purchased{
+    width: 70%;
+  }
+  .individual-pizza{
+    height: auto;
+  }
+}
+
+@media(max-width: 600px){
+  .most-purchased{
+    width: 90%;
+  }
 }
 
 @media(max-width: 400px){
   .individual-pizza img{
     width: 200px;
+    height: auto;
   }
 }
 
@@ -692,6 +712,7 @@ font-family: 'Poppins', sans-serif;
   margin: 0;
   display: inline-block;
   margin: 0 0.5rem 0.5rem 0.5rem;
+  cursor: pointer;
 }
 
 .individual-description{
@@ -1022,6 +1043,12 @@ text-align: center;
   margin: 0 1rem 0 0;
 }
 
+.about-presentation-buttons-active{
+  border-bottom: 2px solid grey !important;
+  transition: border-bottom 0.2s ease;
+  color: grey !important;
+  font-weight: bold !important;
+}
 
 .about-presentation-buttons p{
   margin: 1.5rem 1rem;
@@ -1033,17 +1060,47 @@ text-align: center;
   cursor: pointer;
 }
 
+
 .about-presentation-button-position{
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
+
+@media(max-width: 1200px){
+  .about-presentation{
+    flex-direction: column;
+  }
+
+  .about-presentation-buttons{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+}
+
+@media(max-width: 600px){
+  .about-presentation-buttons{
+    justify-content: center;
+  }
+  .about-presentation-buttons p{
+    text-align: center;
+    flex: 30%;
+  }
+}
+
+@media(max-width: 400px){
+  .about-presentation-buttons p{
+    font-size: 0.9rem;
+  }
+}
+
 /*ABOUT WHY US LIST */
 
 .about-why-us{
   background-color: #f5f5f5;
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 .about-why-us-list{
@@ -1051,7 +1108,6 @@ text-align: center;
   margin: auto;
   display: flex;
   max-width: 1500px;
-
 }
 
 .about-why-us-item{
@@ -1060,6 +1116,7 @@ text-align: center;
   align-items: center;
   justify-content: center;
   margin: 0 1rem;
+
 }
 
 .about-why-us-circle{
@@ -1113,6 +1170,51 @@ text-align: center;
   margin: 1rem;
 }
 
+@media(max-width: 1280px){
+  .about-why-us-list{
+    flex-wrap: wrap;
+  }
+  .about-why-us-item{
+    flex-basis: 45%;
+  }
+}
+
+@media(max-width: 1050px){
+  .about-why-us-text h5{
+    font-size: 1rem;
+  }
+}
+
+@media(max-width: 900px){
+  .about-why-us-list{
+    justify-content: center;
+  }
+  .about-why-us-item{
+    flex-direction: column;
+  }
+
+  .about-why-us-text{
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media(max-width: 750px){
+  .about-why-us{
+    padding: 3rem 0;
+  }
+  .about-why-us-list{
+    flex-direction: column;
+  }
+  .about-why-us-circle{
+    width: 70px;
+    height: 70px;
+  }
+
+  .about-why-us-item{
+    margin: 1rem 0;
+  }
+}
 
 /* ABOUT TEAM MEMBERS */
 
@@ -1164,6 +1266,18 @@ text-align: center;
 
 .social-links span{
   margin: 0 0.3rem;
+}
+
+@media(max-width: 750px){
+ .social-links{
+   display: block;
+ }
+}
+
+@media(max-width: 400px){
+  .about-team-member{
+    margin: 1rem auto;
+  }
 }
 
 /* FOOTER */

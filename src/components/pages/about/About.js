@@ -15,8 +15,7 @@ export default class About extends Component {
                 <AboutWhyUsList/>
                 <AboutOurTeam/>
                 <AboutClients/>
-                <Footer/>
-                
+                <Footer/>   
             </>
         )
     }

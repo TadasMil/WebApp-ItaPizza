@@ -15,7 +15,7 @@ export default class AboutPresentation extends Component {
         const newSection = sectionName;
             this.setState({
                 section: newSection
-            })
+        })
     }
 
     changeTitle = (section) => {
@@ -35,7 +35,7 @@ export default class AboutPresentation extends Component {
             <>
                 {this.changeTitle(this.state.section)}
                 <div className='about-presentation'>
-                <AboutPresentationButtons handleSectionState={this.handleSectionState}/>
+                <AboutPresentationButtons activeSection={this.state.section} handleSectionState={this.handleSectionState}/>
                     <AboutPresentationTexts currentSection={this.state.section} textData={this.state.textData}/>
                 </div>
             </>
