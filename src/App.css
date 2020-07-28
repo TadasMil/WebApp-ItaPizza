@@ -1280,6 +1280,46 @@ text-align: center;
   }
 }
 
+
+/* CONTACTS */
+
+.contacts{
+  display: flex;
+  width: 90%;
+  margin: 2rem auto;
+
+}
+
+.contacts-form{
+  width: 60%;
+}
+
+.contacts-form-fields form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contacts-form-fields input{
+  flex: 40%;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid rgb(187, 187, 187);
+}
+
+.contacts-form-fields textarea{
+  flex: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  height: 150px;
+  resize: none;
+  border: 1px solid rgb(187, 187, 187);
+}
+
+.contacts-form button{
+  margin: 1rem;
+}
+
 /* FOOTER */
 
 .footer{

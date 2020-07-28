@@ -14,7 +14,7 @@ export default function NavBarLinks({styling}) {
                     <NavBarLogo styling={"nav-bar_logo"}/>
                     <div className='nav-bar-link-list'>
                     <Link to='/about' className='links'>Apie mus</Link>
-                    <Link to='/about' className='links'>Kontaktai</Link>
+                    <Link to='/contacts' className='links'>Kontaktai</Link>
                 </div>
         </div>
     ) 
