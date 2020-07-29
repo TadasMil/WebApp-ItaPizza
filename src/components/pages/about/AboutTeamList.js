@@ -18,13 +18,13 @@ export default class AboutTeamList extends Component {
             },
             {
                 id: 3,
-                name: 'Dominykas Girdvainis',
+                name: 'Mantas Marcinkus',
                 duties: 'Pavaduotojo pavaduotojas',
                 img: "https://randomuser.me/api/portraits/men/5.jpg"
             },
             {
                 id: 4,
-                name: 'Laurynas Anužietis',
+                name: 'Rokas Kurčinskas',
                 duties: 'Vadovas',
                 img: "https://randomuser.me/api/portraits/men/3.jpg"
             },
