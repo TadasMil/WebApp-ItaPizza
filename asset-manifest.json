@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-WebApp-ItaPizza/static/css/main.6e778f93.chunk.css",
-    "main.js": "/react-WebApp-ItaPizza/static/js/main.bd976931.chunk.js",
-    "main.js.map": "/react-WebApp-ItaPizza/static/js/main.bd976931.chunk.js.map",
+    "main.js": "/react-WebApp-ItaPizza/static/js/main.c1b0eb51.chunk.js",
+    "main.js.map": "/react-WebApp-ItaPizza/static/js/main.c1b0eb51.chunk.js.map",
     "runtime-main.js": "/react-WebApp-ItaPizza/static/js/runtime-main.55260c72.js",
     "runtime-main.js.map": "/react-WebApp-ItaPizza/static/js/runtime-main.55260c72.js.map",
     "static/css/2.08c51268.chunk.css": "/react-WebApp-ItaPizza/static/css/2.08c51268.chunk.css",
     "static/js/2.b404592a.chunk.js": "/react-WebApp-ItaPizza/static/js/2.b404592a.chunk.js",
     "static/js/2.b404592a.chunk.js.map": "/react-WebApp-ItaPizza/static/js/2.b404592a.chunk.js.map",
     "index.html": "/react-WebApp-ItaPizza/index.html",
-    "precache-manifest.e4fcf34f76f0a7df13300ce31625e6ea.js": "/react-WebApp-ItaPizza/precache-manifest.e4fcf34f76f0a7df13300ce31625e6ea.js",
+    "precache-manifest.def9c299c9dfaff6b9e7be9f6927d95e.js": "/react-WebApp-ItaPizza/precache-manifest.def9c299c9dfaff6b9e7be9f6927d95e.js",
     "service-worker.js": "/react-WebApp-ItaPizza/service-worker.js",
     "static/css/2.08c51268.chunk.css.map": "/react-WebApp-ItaPizza/static/css/2.08c51268.chunk.css.map",
     "static/css/main.6e778f93.chunk.css.map": "/react-WebApp-ItaPizza/static/css/main.6e778f93.chunk.css.map",
@@ -37,6 +37,6 @@
     "static/css/2.08c51268.chunk.css",
     "static/js/2.b404592a.chunk.js",
     "static/css/main.6e778f93.chunk.css",
-    "static/js/main.bd976931.chunk.js"
+    "static/js/main.c1b0eb51.chunk.js"
   ]
 }

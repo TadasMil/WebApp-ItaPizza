@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "64174306ae370d390b2dd2debee3d110",
+    "revision": "2d3b05239295477c73d078434c04b290",
     "url": "/react-WebApp-ItaPizza/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-WebApp-ItaPizza/static/css/2.08c51268.chunk.css"
   },
   {
-    "revision": "f6d082efa2782b1d5ba9",
+    "revision": "087a6c72387a46235990",
     "url": "/react-WebApp-ItaPizza/static/css/main.6e778f93.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-WebApp-ItaPizza/static/js/2.b404592a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f6d082efa2782b1d5ba9",
-    "url": "/react-WebApp-ItaPizza/static/js/main.bd976931.chunk.js"
+    "revision": "087a6c72387a46235990",
+    "url": "/react-WebApp-ItaPizza/static/js/main.c1b0eb51.chunk.js"
   },
   {
     "revision": "ee78c74c1b703187d64c",
