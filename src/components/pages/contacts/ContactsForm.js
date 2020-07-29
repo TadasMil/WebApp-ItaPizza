@@ -1,6 +1,5 @@
 import React from 'react'
 import Button from '../../Button'
-import SectionName from '../../SectionName'
 
 export const ContactsForm = () => {
     return (

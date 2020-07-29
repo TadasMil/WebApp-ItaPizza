@@ -7,7 +7,7 @@ import Zoom from 'react-reveal'
 export default function HomeMenu() {
     return (
        
-        <div>
+        <div id="menu">
              <SectionName title='mūsų meniu'/>
                 <Zoom left>
                     <Menu></Menu>

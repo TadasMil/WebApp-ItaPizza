@@ -1,5 +1,4 @@
 import React from 'react'
-import SectionName from '../../SectionName'
 
 const AboutPresentationTexts = ({currentSection, textData}) => {
 

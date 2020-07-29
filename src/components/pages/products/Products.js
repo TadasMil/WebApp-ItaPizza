@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import NavBar from '../../navbar/NavBar'
 import ProductsTitle from './ProductsTitle'
 import ProductsList from './ProductsList'
 import ProductLinksList from './ProductLinksList'

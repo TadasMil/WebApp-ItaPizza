@@ -11,7 +11,7 @@ export default function HomeSecondPros() {
            buttonText='mūsų produktai'
            text1='Įvairus maisto pasirinkimas'
            text2='Picos, mėsainiai, kebabai, blynai - visko ko tau gali prireikti!'
-           text3='Įšbandyk gardaus ItaPizza ruošiamo maisto'/>
+           text3='Išbandyk gardų ItaPizza ruošiamą maistą'/>
         </div>
     )
 }

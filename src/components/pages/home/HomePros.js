@@ -1,6 +1,5 @@
 import React from 'react'
 import Button from '../../Button'
-import Fade from 'react-reveal/Fade';
 
 export default function HomePros(props) {
     return (
