@@ -640,6 +640,7 @@ font-family: 'Poppins', sans-serif;
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 1500px;
+  margin: auto;
   
 }
 
