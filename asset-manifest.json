@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/WebApp-ItaPizza/static/css/main.910de61f.chunk.css",
-    "main.js": "/WebApp-ItaPizza/static/js/main.a2dcdc86.chunk.js",
-    "main.js.map": "/WebApp-ItaPizza/static/js/main.a2dcdc86.chunk.js.map",
+    "main.css": "/WebApp-ItaPizza/static/css/main.3bbe22dd.chunk.css",
+    "main.js": "/WebApp-ItaPizza/static/js/main.17ef917e.chunk.js",
+    "main.js.map": "/WebApp-ItaPizza/static/js/main.17ef917e.chunk.js.map",
     "runtime-main.js": "/WebApp-ItaPizza/static/js/runtime-main.e03f5a1d.js",
     "runtime-main.js.map": "/WebApp-ItaPizza/static/js/runtime-main.e03f5a1d.js.map",
     "static/css/2.378cb9db.chunk.css": "/WebApp-ItaPizza/static/css/2.378cb9db.chunk.css",
-    "static/js/2.24cfc48d.chunk.js": "/WebApp-ItaPizza/static/js/2.24cfc48d.chunk.js",
-    "static/js/2.24cfc48d.chunk.js.map": "/WebApp-ItaPizza/static/js/2.24cfc48d.chunk.js.map",
+    "static/js/2.4b20612f.chunk.js": "/WebApp-ItaPizza/static/js/2.4b20612f.chunk.js",
+    "static/js/2.4b20612f.chunk.js.map": "/WebApp-ItaPizza/static/js/2.4b20612f.chunk.js.map",
     "index.html": "/WebApp-ItaPizza/index.html",
-    "precache-manifest.fa2b60aeb1d9d5bd06cecc2b12efce00.js": "/WebApp-ItaPizza/precache-manifest.fa2b60aeb1d9d5bd06cecc2b12efce00.js",
+    "precache-manifest.7fb1a68dd41325141d6c58be6377702a.js": "/WebApp-ItaPizza/precache-manifest.7fb1a68dd41325141d6c58be6377702a.js",
     "service-worker.js": "/WebApp-ItaPizza/service-worker.js",
     "static/css/2.378cb9db.chunk.css.map": "/WebApp-ItaPizza/static/css/2.378cb9db.chunk.css.map",
-    "static/css/main.910de61f.chunk.css.map": "/WebApp-ItaPizza/static/css/main.910de61f.chunk.css.map",
-    "static/js/2.24cfc48d.chunk.js.LICENSE.txt": "/WebApp-ItaPizza/static/js/2.24cfc48d.chunk.js.LICENSE.txt",
+    "static/css/main.3bbe22dd.chunk.css.map": "/WebApp-ItaPizza/static/css/main.3bbe22dd.chunk.css.map",
+    "static/js/2.4b20612f.chunk.js.LICENSE.txt": "/WebApp-ItaPizza/static/js/2.4b20612f.chunk.js.LICENSE.txt",
     "static/media/App.css": "/WebApp-ItaPizza/static/media/home-backg1.f847335f.png",
     "static/media/burger-menu2.png": "/WebApp-ItaPizza/static/media/burger-menu2.cc9a9719.png",
     "static/media/kebab-menu1.png": "/WebApp-ItaPizza/static/media/kebab-menu1.be056461.png",
@@ -35,8 +35,8 @@
   "entrypoints": [
     "static/js/runtime-main.e03f5a1d.js",
     "static/css/2.378cb9db.chunk.css",
-    "static/js/2.24cfc48d.chunk.js",
-    "static/css/main.910de61f.chunk.css",
-    "static/js/main.a2dcdc86.chunk.js"
+    "static/js/2.4b20612f.chunk.js",
+    "static/css/main.3bbe22dd.chunk.css",
+    "static/js/main.17ef917e.chunk.js"
   ]
 }
